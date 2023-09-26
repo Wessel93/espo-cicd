@@ -10,7 +10,7 @@ jobs:
     steps:
 
       - name: Connect to server, make run export-import
-        id: docker_container_actions
+        id: export_import
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
             cd /var/www/espocrm/data/espocrm
@@ -19,7 +19,7 @@ jobs:
           ENDSSH
 
       - name: Connect to server, commit+push changes
-        id: docker_container_actions
+        id: git_commit_push
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
             cd /var/www/espocrm/data/espocrm
