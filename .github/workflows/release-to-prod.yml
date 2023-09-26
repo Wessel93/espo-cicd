@@ -22,6 +22,7 @@ jobs:
         run: |
           sshpass -p "${{ secrets.PROD_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.PROD_USER }}@${{ secrets.PROD_IP }} << 'ENDSSH'
             cd /var/www/espocrm/data/espocrm
+            sudo chown -R www-data:www-data .
             sudo /var/www/espocrm/command.sh rebuild
           ENDSSH
 
