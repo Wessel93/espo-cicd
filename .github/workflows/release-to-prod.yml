@@ -29,7 +29,7 @@ jobs:
       - name: Connect to server, import
         id: import
         run: |
-          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
+          sshpass -p "${{ secrets.PROD_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.PROD_USER }}@${{ secrets.PROD_IP }} << 'ENDSSH'
             cd /var/www/espocrm/data/espocrm
             sudo docker exec -t espocrm sh -c "bin/command export-import import --format=json --import-path=\"build/ExportImport/Export\" --import-type=createAndUpdate"
           ENDSSH
