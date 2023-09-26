@@ -14,7 +14,7 @@ jobs:
           sshpass -p "${{ secrets.PROD_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.PROD_USER }}@${{ secrets.PROD_IP }} << 'ENDSSH'
             cd /var/www/espocrm/data/espocrm
             sudo chmod +x bin/command
-            sudo git pull --force
+            sudo git reset --hard origin/main
           ENDSSH
 
       - name: Connect to server, rebuild
