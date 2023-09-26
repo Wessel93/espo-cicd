@@ -16,6 +16,12 @@
                 {
                     "name": "description"
                 }
+            ],
+            [
+                {
+                    "name": "length"
+                },
+                false
             ]
         ],
         "style": "default",

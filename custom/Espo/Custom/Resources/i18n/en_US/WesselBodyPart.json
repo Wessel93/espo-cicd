@@ -1,7 +1,8 @@
 {
     "fields": {
         "bodyPart": "BodyPart",
-        "date": "Date"
+        "date": "Date",
+        "length": "Length"
     },
     "links": [],
     "labels": {
