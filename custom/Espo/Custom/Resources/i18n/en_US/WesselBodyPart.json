@@ -1,0 +1,9 @@
+{
+    "fields": {
+        "bodyPart": "BodyPart"
+    },
+    "links": [],
+    "labels": {
+        "Create WesselBodyPart": "Create WesselBodyPart"
+    }
+}

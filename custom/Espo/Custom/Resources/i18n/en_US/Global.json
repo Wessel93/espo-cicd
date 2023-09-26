@@ -1,0 +1,8 @@
+{
+    "scopeNames": {
+        "WesselBodyPart": "WesselBodyPart"
+    },
+    "scopeNamesPlural": {
+        "WesselBodyPart": "WesselBodyParts"
+    }
+}
