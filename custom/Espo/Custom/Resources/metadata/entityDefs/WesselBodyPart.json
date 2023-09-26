@@ -46,6 +46,10 @@
             "notNull": false,
             "type": "date",
             "isCustom": true
+        },
+        "length": {
+            "type": "int",
+            "isCustom": true
         }
     },
     "links": {
