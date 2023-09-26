@@ -1,8 +1,10 @@
 {
     "scopeNames": {
-        "WesselBodyPart": "WesselBodyPart"
+        "WesselBodyPart": "WesselBodyPart",
+        "DaanieDaan": "DaanieDaan"
     },
     "scopeNamesPlural": {
-        "WesselBodyPart": "WesselBodyParts"
+        "WesselBodyPart": "WesselBodyParts",
+        "DaanieDaan": "DaanieDaans"
     }
 }
