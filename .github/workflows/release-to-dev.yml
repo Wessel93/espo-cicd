@@ -41,6 +41,7 @@ jobs:
             sudo git add client/custom
             sudo git add data/config.php
             sudo git commit -m "commit by ${{github.actor}}"
-            sudo git pull
+            sudo git fetch
+            sudo git checkout dev
             sudo git push -u origin dev
           ENDSSH
