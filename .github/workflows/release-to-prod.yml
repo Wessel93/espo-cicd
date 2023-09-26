@@ -11,7 +11,7 @@ jobs:
       - name: Connect to server, git pull changes
         id: export_import
         run: |
-          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
+          sshpass -p "${{ secrets.PROD_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.PROD_USER }}@${{ secrets.PROD_IP }} << 'ENDSSH'
             cd /var/www/espocrm/data/espocrm
             sudo chmod +x bin/command
             sudo git pull --force
@@ -20,7 +20,7 @@ jobs:
       - name: Connect to server, rebuild
         id: rebuild_espo
         run: |
-          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
+          sshpass -p "${{ secrets.PROD_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.PROD_USER }}@${{ secrets.PROD_IP }} << 'ENDSSH'
             cd /var/www/espocrm/data/espocrm
             sudo /var/www/espocrm/command.sh rebuild
           ENDSSH
