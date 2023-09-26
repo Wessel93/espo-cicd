@@ -17,15 +17,18 @@ jobs:
             sudo git pull --force
           ENDSSH
 
-      - name: Connect to server, commit+push changes
-        id: git_commit_push
+      - name: Connect to server, rebuild
+        id: rebuild_espo
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
             cd /var/www/espocrm/data/espocrm
-            echo ${{ secrets.SSH_PASSWORD }} | sudo -S git add build
-            sudo git add custom
-            sudo git add client/custom
-            sudo git add data/config.php
-            sudo git commit -m "commit by ${{github.actor}}"
-            sudo git push -u origin dev
+            sudo /var/www/espocrm/command.sh rebuild
+          ENDSSH
+
+      - name: Connect to server, import
+        id: import
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
+            cd /var/www/espocrm/data/espocrm
+            sudo docker exec -t espocrm sh -c "bin/command export-import import --format=json --import-path=\"build/ExportImport/Export\" --import-type=createAndUpdate"
           ENDSSH
