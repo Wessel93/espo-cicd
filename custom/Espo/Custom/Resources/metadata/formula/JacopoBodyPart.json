@@ -1,3 +1,0 @@
-{
-    "beforeSaveCustomScript": "calculatedField = 1 + 1;"
-}
