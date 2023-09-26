@@ -1,7 +1,10 @@
 name: release to prod
 
-on: workflow_dispatch
-
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
 jobs:
   deploy:
     name: release to prod job
