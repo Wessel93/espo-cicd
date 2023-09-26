@@ -11,11 +11,11 @@ jobs:
 
       - name: Connect to server, make run export-import
         id: export_import
-        run: echo "${{ secrets.SSH_PASSWORD }}" |
+        run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
-            sudo -S cd /var/www/espocrm/data/espocrm
-            sudo -S chmod +x bin/command
-            sudo -S docker exec -it espocrm sh -c "bin/command export-import export --format=json --config-ignore-list=\"BpmnProcess\" --export-path=\"build/ExportImport/Export\" --pretty-print"
+            cd /var/www/espocrm/data/espocrm
+            echo ${{ secrets.SSH_PASSWORD }} | sudo -S chmod +x bin/command
+            sudo docker exec -it espocrm sh -c "bin/command export-import export --format=json --config-ignore-list=\"BpmnProcess\" --export-path=\"build/ExportImport/Export\" --pretty-print"
           ENDSSH
 
       - name: Connect to server, commit+push changes
