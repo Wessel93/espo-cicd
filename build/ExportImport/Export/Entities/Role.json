@@ -1,0 +1,18 @@
+[
+{
+    "id": "651291d62aea91455",
+    "name": "manage bodypart",
+    "assignmentPermission": "not-set",
+    "userPermission": "not-set",
+    "portalPermission": "not-set",
+    "groupEmailAccountPermission": "not-set",
+    "exportPermission": "not-set",
+    "massUpdatePermission": "not-set",
+    "dataPrivacyPermission": "not-set",
+    "followerManagementPermission": "not-set",
+    "data": "{\"JacopoBodyPart\":{\"create\":\"yes\",\"read\":\"all\",\"edit\":\"all\",\"delete\":\"no\"}}",
+    "fieldData": "{\"Account\":{},\"Call\":{},\"Campaign\":{},\"Case\":{},\"Contact\":{},\"Currency\":{},\"DocumentFolder\":{},\"Document\":{},\"EmailTemplateCategory\":{},\"EmailTemplate\":{},\"Email\":{},\"ExternalAccount\":{},\"Import\":{},\"JacopoBodyPart\":{},\"KnowledgeBaseArticle\":{},\"KnowledgeBaseCategory\":{},\"Lead\":{},\"Meeting\":{},\"Opportunity\":{},\"TargetList\":{},\"Task\":{},\"Team\":{},\"Template\":{},\"User\":{},\"Webhook\":{},\"WorkingTimeCalendar\":{}}",
+    "createdAt": "2023-09-26 08:09:58",
+    "modifiedAt": "2023-09-26 08:09:58"
+}
+]
