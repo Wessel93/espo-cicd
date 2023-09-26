@@ -1,0 +1,22 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "size"
+                },
+                {
+                    "name": "calculatedField"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

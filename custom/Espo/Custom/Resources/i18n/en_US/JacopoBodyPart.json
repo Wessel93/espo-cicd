@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "size": "Size",
+        "calculatedField": "CalculatedField",
+        "contact": "Contact"
+    },
+    "links": {
+        "contact": "Contact"
+    },
+    "labels": {
+        "Create JacopoBodyPart": "Create JacopoBodyPart"
+    },
+    "options": {
+        "size": {
+            "small": "Small",
+            "medium": "Medium",
+            "large": "Large"
+        }
+    }
+}
