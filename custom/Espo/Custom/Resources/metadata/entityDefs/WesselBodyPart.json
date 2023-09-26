@@ -41,6 +41,11 @@
             "audited": true,
             "options": [],
             "isCustom": true
+        },
+        "date": {
+            "notNull": false,
+            "type": "date",
+            "isCustom": true
         }
     },
     "links": {
