@@ -12,15 +12,15 @@ jobs:
         id: export_import
         run: |
           sshpass -p "${{ secrets.PROD_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.PROD_USER }}@${{ secrets.PROD_IP }} << 'ENDSSH'
-            cd /var/www/espocrm/data/espocrm
-            sudo chmod +x bin/command
-            sudo git reset --hard origin/main
+            cd espo-cicd
+            sudo git pull
           ENDSSH
 
-      - name: Connect to server, rebuild
-        id: rebuild_espo
+      - name: Connect to server, copy changes to espo root directory, rebuild
+        id: export_import
         run: |
           sshpass -p "${{ secrets.PROD_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.PROD_USER }}@${{ secrets.PROD_IP }} << 'ENDSSH'
+            sudo cp -rf espo-cicd/* /var/www/espocrm/data/espocrm/
             cd /var/www/espocrm/data/espocrm
             sudo chown -R www-data:www-data .
             sudo /var/www/espocrm/command.sh rebuild
