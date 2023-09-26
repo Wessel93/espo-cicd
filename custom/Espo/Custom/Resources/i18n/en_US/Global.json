@@ -1,0 +1,10 @@
+{
+    "scopeNames": {
+        "JacopoBodyPart": "JacopoBodyPart",
+        "TijsBodyPart": "Tijs Body Part"
+    },
+    "scopeNamesPlural": {
+        "JacopoBodyPart": "JacopoBodyParts",
+        "TijsBodyPart": "Tijs Body Parts"
+    }
+}
