@@ -1,9 +1,0 @@
-{
-    "fields": {
-        "bodyPart": "Body Part"
-    },
-    "links": [],
-    "labels": {
-        "Create TijsBodyPart": "Create Tijs Body Part"
-    }
-}
