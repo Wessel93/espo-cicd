@@ -15,7 +15,7 @@ jobs:
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
             cd /var/www/espocrm/data/espocrm
             chmod +x bin/command
-            sudo docker exec -it espocrm sh -c "bin/command export-import export --format=json --config-ignore-list=\"BpmnProcess\" --export-path=\"build/ExportImport/Export\" --pretty-print"
+            echo ${{ secrets.SSH_PASSWORD }} | sudo -S docker exec -it espocrm sh -c "bin/command export-import export --format=json --config-ignore-list=\"BpmnProcess\" --export-path=\"build/ExportImport/Export\" --pretty-print"
           ENDSSH
 
       - name: Connect to server, commit+push changes
@@ -23,7 +23,7 @@ jobs:
         run: |
           sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
             cd /var/www/espocrm/data/espocrm
-            sudo git add build
+            echo ${{ secrets.SSH_PASSWORD }} | sudo -S git add build
             sudo git add custom
             sudo git add client/custom
             sudo git add data/config.php
