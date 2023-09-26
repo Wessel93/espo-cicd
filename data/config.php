@@ -106,7 +106,8 @@ return [
     27 => 'Template',
     28 => 'Import',
     29 => 'WesselBodyPart',
-    30 => 'DaanieDaan'
+    30 => 'DaanieDaan',
+    31 => 'Tester'
   ],
   'quickCreateList' => [
     0 => 'Account',
@@ -282,8 +283,8 @@ return [
     1 => 'email',
     2 => 'phone'
   ],
-  'cacheTimestamp' => 1695740446,
-  'microtime' => 1695740446.402911,
+  'cacheTimestamp' => 1695741452,
+  'microtime' => 1695741452.199524,
   'siteUrl' => 'http://10.4.0.14',
   'fullTextSearchMinLength' => 4,
   'appTimestamp' => 1695739336,

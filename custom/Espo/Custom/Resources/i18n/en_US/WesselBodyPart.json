@@ -1,6 +1,7 @@
 {
     "fields": {
-        "bodyPart": "BodyPart"
+        "bodyPart": "BodyPart",
+        "date": "Date"
     },
     "links": [],
     "labels": {
