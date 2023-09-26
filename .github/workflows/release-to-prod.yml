@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Connect to server, git pull changes
-        id: export_import
+        id: git_pull
         run: |
           sshpass -p "${{ secrets.PROD_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.PROD_USER }}@${{ secrets.PROD_IP }} << 'ENDSSH'
             cd espo-cicd
@@ -17,7 +17,7 @@ jobs:
           ENDSSH
 
       - name: Connect to server, copy changes to espo root directory, rebuild
-        id: export_import
+        id: copy_rebuild
         run: |
           sshpass -p "${{ secrets.PROD_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.PROD_USER }}@${{ secrets.PROD_IP }} << 'ENDSSH'
             sudo cp -rf espo-cicd/* /var/www/espocrm/data/espocrm/
