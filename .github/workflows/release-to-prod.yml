@@ -13,7 +13,7 @@ jobs:
         run: |
           sshpass -p "${{ secrets.PROD_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.PROD_USER }}@${{ secrets.PROD_IP }} << 'ENDSSH'
             cd espo-cicd
-            sudo git pull
+            sudo git pull origin main
           ENDSSH
 
       - name: Connect to server, copy changes to espo root directory, rebuild
