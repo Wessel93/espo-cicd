@@ -25,7 +25,7 @@ jobs:
       - name: Connect to server, make run export-import
         id: export_import
         run: |
-          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
+          sshpass -p "${{ secrets.DEV_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.DEV_USER }}@${{ secrets.DEV_IP }} << 'ENDSSH'
             cd /var/www/espocrm/data/espocrm
             sudo chmod +x bin/command
             sudo docker exec -t espocrm sh -c "bin/command export-import export --format=json --entity-type-list=\"Role\" --export-path=\"build/ExportImport/Export\" --pretty-print"
@@ -34,7 +34,7 @@ jobs:
       - name: Connect to server, commit+push changes
         id: git_commit_push
         run: |
-          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
+          sshpass -p "${{ secrets.DEV_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.DEV_USER }}@${{ secrets.DEV_IP }} << 'ENDSSH'
             cd /var/www/espocrm/data/espocrm
             echo ${{ secrets.SSH_PASSWORD }} | sudo -S git add build
             sudo git add custom
