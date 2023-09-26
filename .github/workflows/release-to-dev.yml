@@ -1,0 +1,32 @@
+name: release to dev
+
+on: workflow_dispatch
+
+jobs:
+  deploy:
+    name: relase to dev job
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Connect to server, make run export-import
+        id: docker_container_actions
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
+            cd /var/www/espocrm/data/espocrm
+            chmod +x bin/command
+            sudo docker exec -it espocrm sh -c "bin/command export-import export --format=json --config-ignore-list=\"BpmnProcess\" --export-path=\"build/ExportImport/Export\" --pretty-print"
+          ENDSSH
+
+      - name: Connect to server, commit+push changes
+        id: docker_container_actions
+        run: |
+          sshpass -p "${{ secrets.SSH_PASSWORD }}" ssh -o StrictHostKeyChecking=no ${{ secrets.SSH_USER }}@${{ secrets.SERVER_IP_ADDRESS }} << 'ENDSSH'
+            cd /var/www/espocrm/data/espocrm
+            sudo git add build
+            sudo git add custom
+            sudo git add client/custom
+            sudo git add data/config.php
+            sudo git commit -m "commit by ${{github.actor}}"
+            sudo git push -u origin dev
+          ENDSSH
