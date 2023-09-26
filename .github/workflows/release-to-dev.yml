@@ -19,8 +19,8 @@ jobs:
           port: 22
           script: |
             cd /var/www/espocrm/data/espocrm
-            echo "${{ secrets.SSH_PASSWORD }}" | sudo -S chmod +x bin/command
-            echo "${{ secrets.SSH_PASSWORD }}" | sudo -S docker exec -it espocrm sh -c "bin/command export-import export --format=json --config-ignore-list=\"BpmnProcess\" --export-path=\"build/ExportImport/Export\" --pretty-print"
+            sudo chmod +x bin/command
+            sudo docker exec -it espocrm sh -c "bin/command export-import export --format=json --config-ignore-list=\"BpmnProcess\" --export-path=\"build/ExportImport/Export\" --pretty-print"
 
 #      - name: Connect to server, make run export-import
 #        id: export_import
