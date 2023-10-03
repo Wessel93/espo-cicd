@@ -11,7 +11,7 @@ return [
   'recordsPerPageSmall' => 5,
   'recordsPerPageSelect' => 10,
   'recordsPerPageKanban' => 5,
-  'applicationName' => 'EspoCRM',
+  'applicationName' => 'CiCd Test',
   'version' => '8.0.2',
   'timeZone' => 'UTC',
   'dateFormat' => 'DD.MM.YYYY',
@@ -189,18 +189,18 @@ return [
       'name' => 'My Espo',
       'layout' => [
         0 => (object) [
-          'id' => 'default-activities',
-          'name' => 'Activities',
-          'x' => 2,
-          'y' => 2,
-          'width' => 2,
-          'height' => 4
-        ],
-        1 => (object) [
           'id' => 'default-stream',
           'name' => 'Stream',
           'x' => 0,
           'y' => 0,
+          'width' => 2,
+          'height' => 4
+        ],
+        1 => (object) [
+          'id' => 'default-activities',
+          'name' => 'Activities',
+          'x' => 2,
+          'y' => 2,
           'width' => 2,
           'height' => 4
         ]
@@ -283,11 +283,20 @@ return [
     1 => 'email',
     2 => 'phone'
   ],
-  'cacheTimestamp' => 1695741908,
-  'microtime' => 1695741908.548018,
+  'cacheTimestamp' => 1696339788,
+  'microtime' => 1696339788.003414,
   'siteUrl' => 'http://10.4.0.14',
   'fullTextSearchMinLength' => 4,
   'appTimestamp' => 1695739336,
   'maintenanceMode' => NULL,
-  'cronDisabled' => NULL
+  'cronDisabled' => NULL,
+  'latestExtensionVersions' => [
+    'Export Import' => '1.0.8'
+  ],
+  'latestVersion' => '8.0.2',
+  'userThemesDisabled' => false,
+  'avatarsDisabled' => false,
+  'scopeColorsDisabled' => false,
+  'tabIconsDisabled' => false,
+  'dashletsOptions' => (object) []
 ];
