@@ -1,8 +1,8 @@
 {
     "fields": {
+        "isitalready": "Isitalready?"
     },
-    "links": {
-    },
+    "links": [],
     "labels": {
         "Create DaanieDaan": "Create DaanieDaan"
     }
