@@ -1,0 +1,51 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "firstName"
+                },
+                {
+                    "name": "lastName"
+                }
+            ],
+            [
+                {
+                    "name": "gender"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "email"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "preferredLanguage"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "affectedHousehold"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Affected household"
+    }
+]

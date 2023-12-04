@@ -1,0 +1,14 @@
+[
+    "hhID",
+    "name",
+    "phoneNumber",
+    "gender",
+    "pets",
+    "smoke",
+    "accesibilityAdaptations",
+    "hhTotal",
+    "preferredDistrict",
+    "eligibilityStatus",
+    "registrationStatus",
+    "duplicateCheck"
+]

@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "//name = string\\concatenate('Transfer - ', combined.name, ' - ', cashDistribution.name);"
+}

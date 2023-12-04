@@ -1,0 +1,233 @@
+{
+    "links": {
+        "combineds": "Matches",
+        "contactDev": "Contact",
+        "contactDev1": "Contact",
+        "messages": "Messages",
+        "accommodations": "Accommodations"
+    },
+    "labels": {
+        "Create AffectedHousehold": "Create Affected household"
+    },
+    "fields": {
+        "lastName": "Last name",
+        "gender": "Gender",
+        "birthdate": "Date of Birth",
+        "age": "Age",
+        "emailAddress": "Email address",
+        "preferredLanguage": "Languages spoken",
+        "preferredLanguagecommunication": "Preferred language for communication with Red Cross",
+        "idType": "ID type",
+        "otherId": "Other ID type",
+        "idNumber": "ID number",
+        "expirationId": "Expiration date ID",
+        "region": "Region",
+        "accommodationType": "Current accommodation type",
+        "accommodationDeadline": "Deadline for moving out of your current accommodation",
+        "accommodationAddress": "Address of your current accommodation",
+        "legalStatus": "Current legal status in this country",
+        "arrivalDate": "Date of arrival in this country",
+        "stayDuration": "Expected duration of stay",
+        "singleHeaded": "Is your household headed by a single person?",
+        "babies": "Number of babies (less than 1 year old)",
+        "infants": "Number of infants (1 - 4 years old)",
+        "children": "Number of children (5 - 11 years old)",
+        "adolescents": "Number of adolescent (12 - 17 years old)",
+        "adults": "Number of adults (18 - 59 years old)",
+        "elderly": "Number of elderly (60 +)",
+        "pets": "Do you have pets?",
+        "smoke": "Do any of the household members smoke?",
+        "accesibilityAdaptations": "Do you or any of the household members have a disability that requires accesibility adaptations?",
+        "kindergarden": "Do you have children that go to Kindergarden?",
+        "primarySchool": "Do you have children that go to Primary school?",
+        "highSchool": "Do you have children that go to High school?",
+        "car": "Do you have a car?",
+        "specificNeeds": "What type of specific needs?",
+        "hhID": "Household ID",
+        "firstName": "First name",
+        "phoneNumber": "Phone Number",
+        "preferredLanguageOther": "If other, please specify",
+        "preferredLanguageOtherRC": "If other, please specify (RC)",
+        "hhTotal": "Total number of household members",
+        "eligibilityStatus": "Eligibility status",
+        "eligibilityScore": "Eligibility score",
+        "combineds": "Matches",
+        "contactDev": "Contact",
+        "contactDev1": "Contact",
+        "registrationStatus": "Registration status",
+        "registrationName": "Name",
+        "membersSpecificNeeds": "Are there any houdehold members with specific needs?",
+        "manualApproval": "Approve registration manually",
+        "messages": "Messages",
+        "preferredDistrict": "Preferred district",
+        "duplicateCheck": "Duplicate status",
+        "accommodations": "Accommodations",
+        "commentBox": "Comment box",
+        "commentBoxEnglish": "Comment box (English)",
+        "consentToShare": "Do you consent to sharing your data? (Insert data privacy statement here)",
+        "rejectManually": "Reject registration manually"
+    },
+    "options": {
+        "gender": {
+            "male": "Male",
+            "female": "Female",
+            "other": "Other",
+            "rathernotsay": "Rather not say",
+            "": ""
+        },
+        "preferredLanguage": {
+            "ukrainian": "Ukrainian",
+            "russian": "Russian",
+            "english": "English",
+            "slovak": "Slovak",
+            "slovenian": "Slovenian",
+            "hungarian": "Hungarian",
+            "polish": "Polish",
+            "romanian": "Romanian",
+            "bulgarian": "Bulgarian",
+            "": "",
+            "other": "Other"
+        },
+        "preferredLanguagecommunication": {
+            "ukrainian": "Ukrainian",
+            "russian": "Russian",
+            "english": "English",
+            "slovak": "Slovak",
+            "slovenian": "Slovenian",
+            "hungarian": "Hungarian",
+            "polish": "Polish",
+            "romanian": "Romanian",
+            "bulgarian": "Bulgarian",
+            "": "",
+            "other": "Other"
+        },
+        "idType": {
+            "passport": "Passport",
+            "idcard": "ID card",
+            "undocumented": "Undocumented",
+            "idother": "ID other",
+            "": ""
+        },
+        "region": {
+            "region1": "Region 1",
+            "region2": "Region 2",
+            "region3": "Region 3",
+            "region4": "Region 4",
+            "region5": "Region 5",
+            "region6": "region6",
+            "region7": "region7",
+            "region8": "region8",
+            "region9": "region9",
+            "region10": "region10",
+            "": ""
+        },
+        "accommodationType": {
+            "hostfamily": "Host family",
+            "rentalaccommodation": "Rental accommodation",
+            "collectivecentre": "Collective centre",
+            "donothaveaccommodation": "Do not have accommodation",
+            "hotel": "Hotel",
+            "other": "Other",
+            "": ""
+        },
+        "legalStatus": {
+            "national": "National",
+            "asylumseeker": "Asylum seeker",
+            "foreignernoprotectionstatus": "Foreigner without protection status",
+            "foreignerpermanentresident": "Foreigner with permanent resident",
+            "other": "Other",
+            "": ""
+        },
+        "stayDuration": {
+            "less6mo": "Less than 6 months",
+            "between6mo1year": "Between 6 months and 1 year",
+            "permanent": "Permanent",
+            "": ""
+        },
+        "singleHeaded": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "pets": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "smoke": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "accesibilityAdaptations": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "kindergarden": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "primarySchool": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "highSchool": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "car": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "specificNeeds": {
+            "physicaldisability": "Person with physical disability",
+            "mentaldisability": "Person with mental disability",
+            "pregnant": "Pregnant or lactating women",
+            "chronicallyill": "Chronically ill",
+            "unaccompaniedchildren": "Unaccompanied children",
+            "separatedchildren": "Separated children"
+        },
+        "eligibilityStatus": {
+            "rejected": "Rejected",
+            "needs validation": "Needs validation",
+            "approved": "Approved",
+            "": "",
+            "needsValidation": "Needs validation"
+        },
+        "registrationStatus": {
+            "new": "New",
+            "pending": "Pending",
+            "readyMatch": "Ready for Matching",
+            "matchConfirmed": "Match confirmed"
+        },
+        "membersSpecificNeeds": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "preferredDistrict": {
+            "district1": "District 1",
+            "district2": "District 2",
+            "district3": "District 3",
+            "district4": "District 4",
+            "district5": "District 5",
+            "district6": "District 6"
+        },
+        "duplicateCheck": {
+            "unique": "Unique",
+            "duplicate": "Duplicated: ID Number",
+            "potentialDuplicate": "Potential Duplicate: Name",
+            "": "",
+            "duplicatePhone": "Duplicated: Phone",
+            "duplicateName": "Duplicated: Name"
+        }
+    },
+    "presetFilters": {
+        "reportFilter653fd7a94eabdb0ab": "Filter test"
+    }
+}

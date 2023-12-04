@@ -1,0 +1,38 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "transferDate"
+                },
+                {
+                    "name": "transferType"
+                }
+            ],
+            [
+                {
+                    "name": "transferValue"
+                },
+                {
+                    "name": "deliveryMechanism"
+                }
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "transferTimeActual"
+                }
+            ],
+            [
+                {
+                    "name": "combined"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

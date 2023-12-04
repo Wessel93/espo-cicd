@@ -1,0 +1,6 @@
+{
+    "fields": {
+        "transferDate": "Planned transfer date",
+        "transferTimeActual": "Actual transfer date-time"
+    }
+}

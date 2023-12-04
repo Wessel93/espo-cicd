@@ -1,0 +1,61 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "sent"
+                }
+            ],
+            [
+                {
+                    "name": "accommodation"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "affectedHousehold"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "sid"
+                },
+                {
+                    "name": "errorcode"
+                },
+                {
+                    "name": "whatsapp"
+                }
+            ],
+            [
+                {
+                    "name": "to"
+                },
+                {
+                    "name": "from"
+                },
+                {
+                    "name": "language"
+                },
+                {
+                    "name": "messageTemplate"
+                }
+            ],
+            [
+                {
+                    "name": "sendBody"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

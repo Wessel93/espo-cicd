@@ -1,0 +1,122 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "affectedHousehold"
+                },
+                {
+                    "name": "accommodation"
+                }
+            ],
+            [
+                {
+                    "name": "selectedAcc"
+                },
+                {
+                    "name": "addressMatch"
+                }
+            ],
+            [
+                {
+                    "name": "contractStart"
+                },
+                {
+                    "name": "contractEnd"
+                }
+            ],
+            [
+                {
+                    "name": "statusMatch"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "danger",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "General information",
+        "hidden": false,
+        "customLabel": "General information"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "contractRental"
+                },
+                {
+                    "name": "contractHostGuest"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "danger",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Supporting documents",
+        "hidden": false,
+        "customLabel": "Supporting documents"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "paymentsQuestion"
+                },
+                {
+                    "name": "personPay"
+                }
+            ],
+            [
+                {
+                    "name": "bank"
+                },
+                {
+                    "name": "swiftCode"
+                }
+            ],
+            [
+                {
+                    "name": "iban"
+                },
+                {
+                    "name": "ibanVerify"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "danger",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Financial information",
+        "hidden": false,
+        "customLabel": "Bank details"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "matchApproved"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "cashDistribution"
+                },
+                {
+                    "name": "transferApproved"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "danger",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Create and approve transfer"
+    }
+]

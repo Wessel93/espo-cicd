@@ -1,0 +1,196 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": false,
+            "pattern": "$noBadCharacters",
+            "options": []
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "transferDate": {
+            "notNull": false,
+            "type": "date",
+            "isCustom": true
+        },
+        "transferValue": {
+            "type": "currency",
+            "isCustom": true
+        },
+        "transferType": {
+            "type": "enum",
+            "options": [
+                "deposit",
+                "rent",
+                "disabilityAllowance",
+                "utilityAllowance",
+                ""
+            ],
+            "style": {
+                "deposit": null,
+                "rent": null,
+                "disabilityAllowance": null,
+                "utilityAllowance": null,
+                "": null
+            },
+            "isCustom": true
+        },
+        "deliveryMechanism": {
+            "type": "enum",
+            "options": [
+                "IBAN",
+                "cashPickUp",
+                "digitalPickUp",
+                ""
+            ],
+            "style": {
+                "IBAN": null,
+                "cashPickUp": null,
+                "digitalPickUp": null,
+                "": null
+            },
+            "audited": true,
+            "isCustom": true
+        },
+        "combineds": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": false,
+            "isCustom": true
+        },
+        "transfers": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "numberOfTransfers": {
+            "type": "int",
+            "min": 1,
+            "audited": true,
+            "isCustom": true
+        },
+        "frequency": {
+            "type": "enum",
+            "options": [
+                "oneOff",
+                "daily",
+                "weekly",
+                "biweekly",
+                "monthly"
+            ],
+            "style": {
+                "oneOff": null,
+                "daily": null,
+                "weekly": null,
+                "biweekly": null,
+                "monthly": null
+            },
+            "default": "oneOff",
+            "audited": true,
+            "isCustom": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "combineds": {
+            "type": "hasMany",
+            "foreign": "cashDistribution",
+            "entity": "Combined",
+            "audited": false,
+            "isCustom": true
+        },
+        "transfers": {
+            "type": "hasMany",
+            "foreign": "cashDistribution",
+            "entity": "Transfer",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc"
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        },
+        "createdAt": {
+            "columns": [
+                "createdAt"
+            ]
+        },
+        "createdAtId": {
+            "unique": true,
+            "columns": [
+                "createdAt",
+                "id"
+            ]
+        }
+    }
+}

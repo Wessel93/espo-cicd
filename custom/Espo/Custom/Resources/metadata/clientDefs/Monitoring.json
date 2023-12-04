@@ -1,0 +1,11 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "relationshipPanels": {
+        "combined": {
+            "layout": null
+        }
+    }
+}

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "transferDate",
+        "label": "Transfer date"
+    },
+    {
+        "name": "transferValue",
+        "label": "Transfer value"
+    },
+    {
+        "name": "transferType",
+        "label": "Transfer type"
+    },
+    {
+        "name": "deliveryMechanism"
+    }
+]

@@ -1,0 +1,122 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-user",
+    "kanbanViewMode": false,
+    "color": null,
+    "dynamicLogic": {
+        "fields": {
+            "otherId": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "idType",
+                            "value": "idother"
+                        }
+                    ]
+                }
+            },
+            "preferredLanguageOther": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "preferredLanguage",
+                            "value": "other"
+                        }
+                    ]
+                }
+            },
+            "preferredLanguageOtherRC": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "preferredLanguagecommunication",
+                            "value": "other"
+                        }
+                    ]
+                }
+            },
+            "manualApproval": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "eligibilityStatus",
+                                    "value": "needsValidation"
+                                },
+                                {
+                                    "type": "equals",
+                                    "attribute": "eligibilityStatus",
+                                    "value": "rejected"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "commentBoxEnglish": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "commentBoxEnglish"
+                        }
+                    ]
+                }
+            },
+            "rejectManually": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "or",
+                            "value": [
+                                {
+                                    "type": "equals",
+                                    "attribute": "eligibilityStatus",
+                                    "value": "needsValidation"
+                                },
+                                {
+                                    "type": "equals",
+                                    "attribute": "eligibilityStatus",
+                                    "value": "approved"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "options": {
+            "registrationStatus": null
+        }
+    },
+    "relationshipPanels": {
+        "combineds": {
+            "layout": null
+        },
+        "contactDev": {
+            "layout": null
+        },
+        "messages": {
+            "layout": null
+        },
+        "accommodations": {
+            "layout": null
+        }
+    },
+    "filterList": [
+        "__APPEND__",
+        {
+            "isReportFilter": true,
+            "name": "reportFilter653fd7a94eabdb0ab"
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "name = string\\concatenate(affectedHousehold.hhID, ' - ', accommodation.acID);"
+}

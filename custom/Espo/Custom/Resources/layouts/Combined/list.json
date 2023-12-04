@@ -1,0 +1,19 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "affectedHousehold"
+    },
+    {
+        "name": "accommodation"
+    },
+    {
+        "name": "contractEnd"
+    },
+    {
+        "name": "statusMatch"
+    }
+]

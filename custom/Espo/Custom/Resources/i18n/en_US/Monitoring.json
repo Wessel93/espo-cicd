@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "combined": "Match",
+        "date": "Date",
+        "meetingType": "Meeting type"
+    },
+    "links": {
+        "combined": "Match"
+    },
+    "labels": {
+        "Create Monitoring": "Create Monitoring"
+    },
+    "options": {
+        "meetingType": {
+            "phoneCall": "Phone call",
+            "visit": "In-person meeting",
+            "chat": "Chat",
+            "": ""
+        }
+    }
+}

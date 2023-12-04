@@ -1,0 +1,19 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "bankName"
+                },
+                {
+                    "name": "bankSwiftCode"
+                },
+                {
+                    "name": "country"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

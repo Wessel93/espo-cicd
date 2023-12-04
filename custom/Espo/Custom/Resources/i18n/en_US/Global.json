@@ -1,0 +1,30 @@
+{
+    "scopeNames": {
+        "AffectedHousehold": "Affected household",
+        "Accommodation": "Accommodation",
+        "Combined": "Match",
+        "ContactDev": "Contact",
+        "Payment": "Payment",
+        "Bank": "Bank",
+        "MessageTemplate": "Message Template",
+        "Message": "Message",
+        "Transfer": "Transfer",
+        "CashDistribution": "Cash distribution",
+        "AdequacyCriteria": "Accommodation adequacy",
+        "Monitoring": "Monitoring"
+    },
+    "scopeNamesPlural": {
+        "AffectedHousehold": "Affected households",
+        "Accommodation": "Accommodations",
+        "Combined": "Matches",
+        "ContactDev": "Contacts",
+        "Payment": "Payments",
+        "Bank": "Banks",
+        "MessageTemplate": "Message Templates",
+        "Message": "Messages",
+        "Transfer": "Transfers",
+        "CashDistribution": "Cash distributions",
+        "AdequacyCriteria": "Accommodation adequacy",
+        "Monitoring": "Monitoring"
+    }
+}

@@ -1,0 +1,794 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": false,
+            "pattern": "$noBadCharacters",
+            "options": []
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "beneficiaryName": {
+            "type": "varchar",
+            "audited": true,
+            "isCustom": true
+        },
+        "nameRcstaff": {
+            "type": "varchar",
+            "audited": true,
+            "isCustom": true
+        },
+        "buildingStructure": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "housingBasement": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "utilitiesElectricity": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "utilitiesWater": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "utilitiesStorage": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "utilitiesSeptic": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "housingunitType": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "detachedHouseownplot",
+                "independentFlat",
+                "detachedHousesameplot",
+                "sharedHousehostfamily",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "detachedHouseownplot": null,
+                "independentFlat": null,
+                "detachedHousesameplot": null,
+                "sharedHousehostfamily": null,
+                "": null
+            }
+        },
+        "addressVerification": {
+            "type": "text",
+            "audited": true,
+            "isCustom": true
+        },
+        "numberBedrooms": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "proofOwnership": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "photoProperty": {
+            "type": "file",
+            "audited": true,
+            "isCustom": true
+        },
+        "propertyOwnershipdetails": {
+            "type": "text",
+            "audited": true,
+            "isCustom": true
+        },
+        "housingEasyaccess": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "housingNeigbourhood": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "locationDetails": {
+            "type": "text",
+            "audited": true,
+            "isCustom": true
+        },
+        "safetyFence": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "safetyLockexternal": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "safetyLockinternal": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "safetyLockwindows": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "safetyBalconies": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "safetyGasconnection": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "safetyElectricitycookingheating": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "safetyDetails": {
+            "type": "text",
+            "audited": true,
+            "isCustom": true
+        },
+        "habitabilityPaint": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "habitabilityDry": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "habitabilityVentilated": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "habitabilitySealed": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "utilitiesHeating": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "utilitiesLightning": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            },
+            "default": "no"
+        },
+        "utilitiesBathroom": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "utilitiesHeater": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "utilitiesDetails": {
+            "type": "text",
+            "audited": true,
+            "isCustom": true
+        },
+        "kitchenCook": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "kitchenDining": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "kitchenCookware": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "kitchenDetails": {
+            "type": "text",
+            "audited": true,
+            "isCustom": true
+        },
+        "bedroomBed": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "bedroomSharing": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "bedroomWardrobe": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "bedroomMattress": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "bedroomPillow": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "bedroomDetails": {
+            "type": "text",
+            "audited": true,
+            "isCustom": true
+        },
+        "accessibilityDisabilityproperty": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "accessibilityDisabilityhouse": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "accessibilityElevator": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "accessibilitySpecialsanitary": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "accessibilityDetails": {
+            "type": "text",
+            "audited": true,
+            "isCustom": true
+        },
+        "photoKitchen": {
+            "type": "file",
+            "audited": true,
+            "isCustom": true
+        },
+        "photoBedroom1": {
+            "type": "file",
+            "audited": true,
+            "isCustom": true
+        },
+        "photoBedroom2": {
+            "type": "file",
+            "audited": true,
+            "isCustom": true
+        },
+        "photoHousing1": {
+            "type": "file",
+            "audited": true,
+            "isCustom": true
+        },
+        "photoHousing2": {
+            "type": "file",
+            "audited": true,
+            "isCustom": true
+        },
+        "accommodationID": {
+            "type": "varchar",
+            "maxLength": 150,
+            "audited": true,
+            "options": [],
+            "isCustom": true
+        },
+        "habitabilityDetails": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true,
+            "isCustom": true
+        },
+        "accommodation": {
+            "type": "linkOne"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "photoProperty": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        },
+        "photoKitchen": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        },
+        "photoBedroom1": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        },
+        "photoBedroom2": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        },
+        "photoHousing1": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        },
+        "photoHousing2": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true,
+            "utility": true
+        },
+        "accommodation": {
+            "type": "hasOne",
+            "foreign": "adequacyCriteria",
+            "entity": "Accommodation",
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc"
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        },
+        "createdAt": {
+            "columns": [
+                "createdAt"
+            ]
+        },
+        "createdAtId": {
+            "unique": true,
+            "columns": [
+                "createdAt",
+                "id"
+            ]
+        }
+    }
+}

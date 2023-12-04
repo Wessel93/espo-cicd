@@ -1,0 +1,154 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                false,
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "sid"
+                }
+            ],
+            [
+                {
+                    "name": "country"
+                },
+                {
+                    "name": "messageCategory"
+                },
+                {
+                    "name": "deliveryMechanism"
+                },
+                {
+                    "name": "type"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "note"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "danger",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "IMPORTANT"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "bodyEN"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "English"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "bodyHU"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Hungarian"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "bodyPL"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Polish"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "bodyRO"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Romanian"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "bodyRU"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Russian"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "bodySK"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Slovak"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "bodySL"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Slovenian"
+    }
+]

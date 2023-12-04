@@ -1,0 +1,12 @@
+[
+    {
+        "name": "firstName",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    }
+]

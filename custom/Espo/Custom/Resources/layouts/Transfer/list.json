@@ -1,0 +1,25 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "combined"
+    },
+    {
+        "name": "transferDate"
+    },
+    {
+        "name": "transferValue"
+    },
+    {
+        "name": "transferType"
+    },
+    {
+        "name": "deliveryMechanism"
+    },
+    {
+        "name": "status"
+    }
+]

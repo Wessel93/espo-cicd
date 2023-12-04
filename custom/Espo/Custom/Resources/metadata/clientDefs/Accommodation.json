@@ -1,0 +1,132 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-home",
+    "relationshipPanels": {
+        "combineds": {
+            "layout": null
+        },
+        "contactDev": {
+            "layout": null
+        },
+        "messages": {
+            "layout": null
+        },
+        "affectedHouseholds": {
+            "layout": null
+        },
+        "adequacyCriteria": {
+            "layout": null
+        }
+    },
+    "filterList": [
+        "__APPEND__",
+        {
+            "isReportFilter": true,
+            "name": "reportFilter65410babcb92b27a6"
+        },
+        {
+            "isReportFilter": true,
+            "name": "reportFilter65410bbbd605949b7"
+        }
+    ],
+    "dynamicLogic": {
+        "fields": {
+            "otherId": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "idType",
+                            "value": "idother"
+                        }
+                    ]
+                }
+            },
+            "nrBeds": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "greaterThanOrEquals",
+                            "attribute": "nrRooms",
+                            "value": 1
+                        }
+                    ]
+                }
+            },
+            "nrBeds2": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "greaterThanOrEquals",
+                            "attribute": "nrRooms",
+                            "value": 2
+                        }
+                    ]
+                }
+            },
+            "nrBeds3": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "greaterThanOrEquals",
+                            "attribute": "nrRooms",
+                            "value": 3
+                        }
+                    ]
+                }
+            },
+            "sizeRoom": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "greaterThanOrEquals",
+                            "attribute": "nrRooms",
+                            "value": 1
+                        }
+                    ]
+                }
+            },
+            "sizeRoom2": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "greaterThanOrEquals",
+                            "attribute": "nrRooms",
+                            "value": 2
+                        }
+                    ]
+                }
+            },
+            "sizeRoom3": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "greaterThanOrEquals",
+                            "attribute": "nrRooms",
+                            "value": 3
+                        }
+                    ]
+                }
+            }
+        },
+        "options": {
+            "registrationStatus": [
+                {
+                    "optionList": [
+                        "readyMatching"
+                    ],
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "verificationStatus",
+                            "value": "approved"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

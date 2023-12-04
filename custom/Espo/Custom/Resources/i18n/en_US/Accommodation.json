@@ -1,0 +1,212 @@
+{
+    "fields": {
+        "acID": "Accommodation ID",
+        "typeOwner": "Type of property owner",
+        "gender": "Gender",
+        "birthdate": "Date of Birth",
+        "age": "Age",
+        "emailAddress": "Email address",
+        "preferredLanguagecommunication": "Preferred language for communication with Red Cross",
+        "idType": "ID type",
+        "idNumber": "ID number",
+        "expirationId": "Expiration date ID",
+        "accType": "What type of accommodation do you offer?",
+        "startDate": "From what date is the accommodation available?",
+        "endDate": "Until what date is the accommodation available?",
+        "address": "What is the address of the accommodation?",
+        "nrRooms": "How many bedrooms do you offer?",
+        "nrBeds": "Number of beds in this room",
+        "sizeRoom": "Size of the room (in m2)",
+        "nrPeople": "Total number of people that can be hosted",
+        "hostChildren": "Is the accommodation suitable for children?",
+        "havePets": "Do you have pets?",
+        "acceptPets": "Are pets allowed?",
+        "youSmoke": "Do you smoke?",
+        "acceptSmoke": "Is smoking allowed?",
+        "seperateBathroom": "Private bathroom",
+        "seperateKitchen": "Private kitchen",
+        "accessibility": "Is the accommodation accessible for people with reduced mobility?",
+        "elevator": "Elevator?",
+        "employmentStatus": "What is your employment status?",
+        "distanceMarket": "What is the distance to the nearest supermarket? (In km)",
+        "distanceSchool": "What is the distance to the nearest school?",
+        "nearAccommodation": "Free parking near the accommodation?",
+        "babies": "Number of babies (less than 1 year old)",
+        "infants": "Number of infants (1 - 4 years old)",
+        "children": "Number of children (5 - 11 years old)",
+        "adolescents": "Number of adolescent (12 - 17 years old)",
+        "adults": "Number of adults (18 - 59 years old)",
+        "elderly": "Number of elderly (60 +)",
+        "totalHHMembers": "Total number of household members",
+        "commentBox": "Comment box",
+        "combineds": "Matches",
+        "contactDev": "Contact",
+        "contactDev1": "Contact",
+        "registrationName": "Name",
+        "registrationStatus": "Registration status",
+        "messages": "Messages",
+        "districtAccommodation": "District",
+        "phoneNumber": "Phone number",
+        "affectedHouseholds": "Affected Households",
+        "commentBoxEnglish": "Comment box (English)",
+        "consentToShare": "Do you consent to sharing your data? (Insert data privacy statement here)",
+        "adequacyCriteria": "Adequacy Criteria",
+        "verificationStatus": "Verification status",
+        "adequacyCriteria1": "Adequacy Criteria1",
+        "otherId": "Other ID type",
+        "lastName": "Last name",
+        "firstName": "First name",
+        "preferredLanguage": "Languages spoken",
+        "nrBeds2": "Number of beds in this room",
+        "nrBeds3": "Number of beds in this room",
+        "sizeRoom2": "Size of the room (in m2)",
+        "sizeRoom3": "Size of the room (in m2)"
+    },
+    "links": {
+        "combineds": "Matches",
+        "contactDev": "Contact",
+        "contactDev1": "Contact",
+        "messages": "Messages",
+        "affectedHouseholds": "Affected Households",
+        "adequacyCriteria": "Adequacy Criteria",
+        "adequacyCriteria1": "Adequacy Criteria1"
+    },
+    "labels": {
+        "Create Accommodation": "Create Accommodation"
+    },
+    "options": {
+        "typeOwner": {
+            "hostFam": "Host family",
+            "landLord": "Landlord",
+            "company": "Company",
+            "": ""
+        },
+        "gender": {
+            "male": "Male",
+            "female": "Female",
+            "other": "Other",
+            "rathernotsay": "Rather not say",
+            "": ""
+        },
+        "preferredLanguagecommunication": {
+            "ukrainian": "Ukrainian",
+            "russian": "Russian",
+            "english": "English",
+            "slovak": "Slovak",
+            "slovenian": "Slovenian",
+            "hungarian": "Hungarian",
+            "polish": "Polish",
+            "romanian": "Romanian",
+            "bulgarian": "Bulgarian",
+            "": ""
+        },
+        "idType": {
+            "passport": "Passport",
+            "idcard": "ID card",
+            "undocumented": "Undocumented",
+            "idother": "Other",
+            "": ""
+        },
+        "accType": {
+            "apartment": "Apartment",
+            "house": "House",
+            "sharedAcc": "Shared accommodation",
+            "": ""
+        },
+        "hostChildren": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "havePets": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "acceptPets": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "youSmoke": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "acceptSmoke": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "seperateBathroom": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "seperateKitchen": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "accessibility": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "elevator": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "employmentStatus": {
+            "fullTime": "Full-Time",
+            "partTime": "Part-Time",
+            "retired": "Retired",
+            "noJob": "No job",
+            "other": "Other",
+            "": ""
+        },
+        "nearAccommodation": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "registrationStatus": {
+            "new": "New",
+            "pending": "Pending",
+            "readyMatching": "Ready for matching",
+            "matchConfirmed": "Match confirmed"
+        },
+        "districtAccommodation": {
+            "district1": "District 1",
+            "district2": "District 2",
+            "district3": "District 3",
+            "district4": "District 4",
+            "district5": "District 5",
+            "district6": "District 6",
+            "": ""
+        },
+        "verificationStatus": {
+            "Adequacy check is scheduled": "Adequacy visit is scheduled",
+            "pending": "Pending",
+            "approved": "Approved",
+            "rejected": "Rejected",
+            "": ""
+        },
+        "preferredLanguage": {
+            "ukrainian": "Ukrainian",
+            "russian": "Russian",
+            "english": "English",
+            "slovak": "Slovak",
+            "slovenian": "Slovenian",
+            "hungarian": "Hungarian",
+            "polish": "Polish",
+            "romanian": "Romanian",
+            "bulgarian": "Bulgarian"
+        }
+    },
+    "presetFilters": {
+        "reportFilter65410babcb92b27a6": "Pets allowed",
+        "reportFilter65410bbbd605949b7": "Smoking allowed"
+    }
+}

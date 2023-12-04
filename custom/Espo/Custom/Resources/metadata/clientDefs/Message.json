@@ -1,0 +1,48 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-envelope-open-text",
+    "relationshipPanels": {
+        "accommodation": {
+            "layout": null
+        },
+        "messageTemplate": {
+            "layout": null
+        },
+        "affectedHousehold": {
+            "layout": null
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "accommodation": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "accommodationId",
+                            "data": {
+                                "field": "accommodation"
+                            }
+                        }
+                    ]
+                }
+            },
+            "affectedHousehold": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "affectedHouseholdId",
+                            "data": {
+                                "field": "affectedHousehold"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

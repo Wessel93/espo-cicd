@@ -1,0 +1,13 @@
+[
+    {
+        "name": "bankName",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "bankSwiftCode"
+    },
+    {
+        "name": "country"
+    }
+]

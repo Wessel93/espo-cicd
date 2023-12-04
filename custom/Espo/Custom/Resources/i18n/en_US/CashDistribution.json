@@ -1,0 +1,45 @@
+{
+    "fields": {
+        "transferDate": "First transfer date",
+        "transferValue": "Transfer value",
+        "transferValueCurrency": "Transfer value (Currency)",
+        "transferValueConverted": "Transfer value (Converted)",
+        "transferType": "Transfer type",
+        "deliveryMechanism": "Delivery mechanism",
+        "combineds": "Matches",
+        "transfers": "Transfers",
+        "numberOfTransfers": "Number of total transfers",
+        "frequency": "Frequency"
+    },
+    "links": {
+        "combineds": "Matches",
+        "transfers": "Transfers"
+    },
+    "labels": {
+        "Create CashDistribution": "Create Cash distribution"
+    },
+    "options": {
+        "transferType": {
+            "deposit": "Deposit",
+            "rent": "Rent",
+            "disabilities": "Disability top-up",
+            "winterization": "Winterization top-up",
+            "": "",
+            "disabilityAllowance": "Disability allowance",
+            "utilityAllowance": "Utility allowance"
+        },
+        "deliveryMechanism": {
+            "IBAN": "IBAN",
+            "cashPickUp": "Cash pick-up",
+            "digitalPickUp": "Digital pick-up",
+            "": ""
+        },
+        "frequency": {
+            "oneOff": "One off",
+            "daily": "Daily",
+            "weekly": "Weekly",
+            "biweekly": "Bi-weekly",
+            "monthly": "Monthly"
+        }
+    }
+}

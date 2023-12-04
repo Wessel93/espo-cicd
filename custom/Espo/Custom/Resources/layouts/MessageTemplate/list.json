@@ -1,0 +1,22 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "country"
+    },
+    {
+        "name": "type"
+    },
+    {
+        "name": "deliveryMechanism"
+    },
+    {
+        "name": "createdAt"
+    },
+    {
+        "name": "status"
+    }
+]

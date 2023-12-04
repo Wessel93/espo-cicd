@@ -1,0 +1,43 @@
+{
+    "fields": {
+        "transferValue": "Transfer value",
+        "transferValueCurrency": "Transfer value (Currency)",
+        "transferValueConverted": "Transfer value (Converted)",
+        "status": "Status",
+        "combined": "Match",
+        "deliveryMechanism": "Delivery mechanism",
+        "transferType": "Transfer type",
+        "transferDate": "Planned transfer date",
+        "cashDistribution": "Cash Distribution",
+        "transferTimeActual": "Actual transfer date-time"
+    },
+    "links": {
+        "combined": "Combined",
+        "cashDistribution": "Cash Distribution"
+    },
+    "labels": {
+        "Create Transfer": "Create Transfer"
+    },
+    "options": {
+        "status": {
+            "planned": "Planned",
+            "approved": "Approved",
+            "pending": "Pending",
+            "successful": "Successful",
+            "failed": "Failed"
+        },
+        "deliveryMechanism": {
+            "IBAN": "IBAN",
+            "cashPickUp": "Cash pick up",
+            "digitalPickUp": "Digital pick up",
+            "": ""
+        },
+        "transferType": {
+            "deposit": "Deposit",
+            "rent": "Rent",
+            "disabilityAllowance": "Disability allowance",
+            "utilityAllowance": "Utility allowance",
+            "": ""
+        }
+    }
+}

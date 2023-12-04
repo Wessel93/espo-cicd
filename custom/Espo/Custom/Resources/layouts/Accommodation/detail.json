@@ -1,0 +1,417 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "consentToShare"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "danger",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Contact information",
+        "hidden": false,
+        "customLabel": "Consent"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "typeOwner"
+                },
+                {
+                    "name": "acID"
+                }
+            ],
+            [
+                {
+                    "name": "firstName"
+                },
+                {
+                    "name": "lastName"
+                }
+            ],
+            [
+                {
+                    "name": "birthdate"
+                },
+                {
+                    "name": "age"
+                }
+            ],
+            [
+                {
+                    "name": "gender"
+                },
+                {
+                    "name": "emailAddress"
+                }
+            ],
+            [
+                {
+                    "name": "phoneNumber"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Contact information property owner"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "idType"
+                },
+                {
+                    "name": "otherId"
+                }
+            ],
+            [
+                {
+                    "name": "idNumber"
+                },
+                {
+                    "name": "expirationId"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Identification"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "preferredLanguage"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "preferredLanguagecommunication"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Language"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "accType"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "districtAccommodation"
+                }
+            ],
+            [
+                {
+                    "name": "startDate"
+                },
+                {
+                    "name": "endDate"
+                }
+            ],
+            [
+                {
+                    "name": "nrRooms"
+                },
+                {
+                    "name": "nrPeople"
+                }
+            ],
+            [
+                {
+                    "name": "nrBeds"
+                },
+                {
+                    "name": "sizeRoom"
+                }
+            ],
+            [
+                {
+                    "name": "nrBeds2"
+                },
+                {
+                    "name": "sizeRoom2"
+                }
+            ],
+            [
+                {
+                    "name": "nrBeds3"
+                },
+                {
+                    "name": "sizeRoom3"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Information about the accommodation",
+        "hidden": false,
+        "customLabel": "Information about the accommodation"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "hostChildren"
+                },
+                {
+                    "name": "employmentStatus"
+                }
+            ],
+            [
+                {
+                    "name": "havePets"
+                },
+                {
+                    "name": "acceptPets"
+                }
+            ],
+            [
+                {
+                    "name": "youSmoke"
+                },
+                {
+                    "name": "acceptSmoke"
+                }
+            ],
+            [
+                {
+                    "name": "seperateKitchen"
+                },
+                {
+                    "name": "seperateBathroom"
+                }
+            ],
+            [
+                {
+                    "name": "accessibility"
+                },
+                {
+                    "name": "elevator"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Additional matching criteria"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "distanceMarket"
+                },
+                {
+                    "name": "distanceSchool"
+                }
+            ],
+            [
+                {
+                    "name": "nearAccommodation"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Information about the area of accommodation"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "babies"
+                },
+                {
+                    "name": "infants"
+                }
+            ],
+            [
+                {
+                    "name": "children"
+                },
+                {
+                    "name": "adolescents"
+                }
+            ],
+            [
+                {
+                    "name": "adults"
+                },
+                {
+                    "name": "elderly"
+                }
+            ],
+            [
+                {
+                    "name": "totalHHMembers"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Household composition host family",
+        "hidden": false,
+        "customLabel": "Household composition host family"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "registrationStatus"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Status",
+        "hidden": false,
+        "customLabel": "Registration status"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "adequacyCriteria"
+                },
+                {
+                    "name": "verificationStatus"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": "Accommodation adequacy",
+        "hidden": false,
+        "customLabel": "Adequacy verification"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "commentBox"
+                },
+                {
+                    "name": "commentBoxEnglish"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Comments"
+    }
+]

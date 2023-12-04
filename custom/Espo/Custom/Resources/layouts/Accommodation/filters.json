@@ -1,0 +1,13 @@
+[
+    "acID",
+    "registrationName",
+    "districtAccommodation",
+    "nrPeople",
+    "acceptSmoke",
+    "havePets",
+    "acceptPets",
+    "hostChildren",
+    "accessibility",
+    "registrationStatus",
+    "verificationStatus"
+]

@@ -1,0 +1,4 @@
+{
+    "beforeSaveCustomScript": "// Give correct name to affected household registration (Household + ID//\nregistrationName = string\\concatenate(firstName,' ', lastName);\n\nname = string\\concatenate(\"Household - \", hhID);\n\n\n// Calculate total number of household members // \nhhTotal = (babies + infants + children + adolescents + adults + elderly);\n\n//Calculate age on the basis of date of birth \nage = datetime\\diff(datetime\\today(), birthdate, 'years');\n\n",
+    "beforeSaveApiScript": "name = string\\concatenate(\"Household - \", hhID);\n\nhhTotal = (babies + infants + children + adolescents + adults + elderly);"
+}

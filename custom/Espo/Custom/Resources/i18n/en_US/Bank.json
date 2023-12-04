@@ -1,0 +1,27 @@
+{
+    "fields": {
+        "bankName": "Bank Name",
+        "bankSwiftCode": "Bank Swift Code",
+        "country": "Country",
+        "combined": "Match",
+        "combineds": "Matches"
+    },
+    "links": {
+        "combined": "Match",
+        "combineds": "Matches"
+    },
+    "labels": {
+        "Create Bank": "Create Bank"
+    },
+    "options": {
+        "country": {
+            "poland": "Poland",
+            "russia": "Russia",
+            "netherlands": "The Netherlands",
+            "hungary": "Hungary",
+            "slovakia": "Slovakia",
+            "ukraine": "Ukraine",
+            "": ""
+        }
+    }
+}

@@ -1,0 +1,258 @@
+{
+    "fields": {
+        "beneficiaryName": "Beneficiary name and surname",
+        "nameRcstaff": "Name of Red Cross staff member",
+        "buildingStructure": "The building is structurally sound without signs of potential structural issues such major cracks",
+        "housingBasement": "The housing unit is located at the ground floor or upper floor, NOT in a basement",
+        "utilitiesElectricity": "The housing unit is served by the electricity network and the electricity circuit is protected with at least one circuit breaker",
+        "utilitiesWater": "The housing unit is connected to the potable water network",
+        "utilitiesStorage": "The housing unit has a minimum storage capacity of 30 L/person/day",
+        "utilitiesSeptic": "The house has functioning and safe system to discharge black and grey water, either to the municipal network or to a septic tank",
+        "housingunitType": "The housing unit is (please select one):",
+        "addressVerification": "Address",
+        "numberBedrooms": "Number of rooms",
+        "proofOwnership": "Can the Host family / Landlord prove ownership of the property?",
+        "photoProperty": "Photo of property title (if possible)",
+        "propertyOwnershipdetails": "Additional details (if any)",
+        "housingEasyaccess": "The location of the housing unit allows easy access to relevant public services such as transportation, school, health care, and markets",
+        "housingNeigbourhood": "The neighbourhood is considered safe and well lighted at night where possible",
+        "locationDetails": "Additional details (if any)",
+        "safetyFence": "A fence or perimeter wall is existing",
+        "safetyLockexternal": "The entrance door is lockable from inside / outside and in good conditions",
+        "safetyLockinternal": "All internal doors are lockable, in good conditions and provide adequate privacy when closed.",
+        "safetyLockwindows": "All external windows and doors are lockable and in good conditions.",
+        "safetyBalconies": "Balconies have a parapet with minimum height of 1.1m",
+        "safetyGasconnection": "Gas connection is safe / certified",
+        "safetyElectricitycookingheating": "The unit has electric appliances for cooking and heating in place of gas",
+        "safetyDetails": "Please provide additional details",
+        "habitabilityPaint": "All walls are plastered and painted",
+        "habitabilityDry": "The housing unit is dry and with no significant sign moisture or humidity",
+        "habitabilityVentilated": "The housing unit is well ventilated",
+        "habitabilitySealed": "The indoor space is sealed, with no major gaps or leaks (roof leaks, air gaps between windows and walls etc.)",
+        "utilitiesHeating": "The housing unit has centralized or independent heating",
+        "utilitiesLightning": "Each room has at least one lighting point and one socket",
+        "utilitiesBathroom": "The housing unit is equipped with at least one functioning flushing toilet / latrine, one shower and a sink",
+        "utilitiesHeater": "There is a water heater and a washing machine for the household individual use",
+        "utilitiesDetails": "Please provide additional details",
+        "kitchenCook": "The kitchen area has a space to prepare, cook and store the food (there is a sink, stove and a fridge)",
+        "kitchenDining": "The dining area is furnished with at least one table and sufficient number of chairs",
+        "kitchenCookware": "The kitchen is equipped with cookware (pots, pans, lids etc.) and tableware (plates, cutlery, glasses, cups etc.)",
+        "kitchenDetails": "Please provide additional details",
+        "bedroomBed": "Each adult household member has their own bed, except adult couples and infants. In case of two households sharing a housing unit, each household has at least one separate bedroom",
+        "bedroomSharing": "No more than 3 family members are sharing the same bedroom",
+        "bedroomWardrobe": "There is a wardrobe for each bedroom (inside or outside the room)",
+        "bedroomMattress": "Each bed is equipped with a mattress in hygienic conditions",
+        "bedroomPillow": "Each bed is equipped with a pillow, one pair of sheets and a blanket for each bed",
+        "bedroomDetails": "Please provide additional details",
+        "accessibilityDisabilityproperty": "People with disability / limited mobility can independently access the property from the public space",
+        "accessibilityDisabilityhouse": "People with disability / limited mobility can independently enter the house and circulate in all rooms",
+        "accessibilityElevator": "If located on upper floors, the building is equipped with an elevator",
+        "accessibilitySpecialsanitary": "Special sanitary equipment is installed to make the bathroom fully accessible",
+        "accessibilityDetails": "accessibilityDetails Please provide additional details",
+        "photoKitchen": "Kitchen / living room",
+        "photoBedroom1": "Bedroom 1",
+        "photoBedroom2": "Bedroom 2 / Other photo of the housing unit",
+        "photoHousing1": "Other photo of the housing unit",
+        "photoHousing2": "Other photo of the housing unit",
+        "accommodation": "Accommodation",
+        "accommodationID": "Accommodation ID",
+        "accommodation1": "Accommodation1",
+        "habitabilityDetails": "Please provide additional details"
+    },
+    "links": {
+        "accommodation": "Accommodation",
+        "accommodation1": "Accommodation1"
+    },
+    "labels": {
+        "Create AdequacyCriteria": "Create Accommodation adequacy"
+    },
+    "options": {
+        "buildingStructure": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "housingBasement": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "utilitiesElectricity": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "utilitiesWater": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "utilitiesStorage": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "utilitiesSeptic": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "housingunitType": {
+            "detachedHouseownplot": "A detached house in own plot",
+            "independentFlat": "An independent flat in an apartment building",
+            "detachedHousesameplot": "detachedHoA detached housing unit in the same plot where host family / landlord livesusesameplot",
+            "sharedHousehostfamily": "A separate portion of a house in the same building where the host family/landlord lives",
+            "": ""
+        },
+        "proofOwnership": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "housingEasyaccess": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "housingNeigbourhood": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "safetyFence": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "safetyLockexternal": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "safetyLockinternal": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "safetyLockwindows": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "safetyBalconies": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "safetyGasconnection": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "safetyElectricitycookingheating": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "habitabilityPaint": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "habitabilityDry": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "habitabilityVentilated": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "habitabilitySealed": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "utilitiesHeating": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "utilitiesLightning": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "utilitiesBathroom": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "utilitiesHeater": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "kitchenCook": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "kitchenDining": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "kitchenCookware": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "bedroomBed": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "bedroomSharing": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "bedroomWardrobe": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "bedroomMattress": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "bedroomPillow": {
+            "yes": "Nes",
+            "no": "No",
+            "": ""
+        },
+        "accessibilityDisabilityproperty": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "accessibilityDisabilityhouse": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "accessibilityElevator": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        },
+        "accessibilitySpecialsanitary": {
+            "yes": "Yes",
+            "no": "No",
+            "": ""
+        }
+    }
+}

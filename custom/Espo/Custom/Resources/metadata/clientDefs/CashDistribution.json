@@ -1,0 +1,31 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-money-check-alt",
+    "relationshipPanels": {
+        "combineds": {
+            "layout": null
+        },
+        "transfers": {
+            "layout": null
+        }
+    },
+    "dynamicLogic": {
+        "fields": {
+            "numberOfTransfers": {
+                "visible": null,
+                "readOnly": {
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "frequency",
+                            "value": "oneOff"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "_delimiter_": {
+        "disabled": true
+    },
+    "combineds": {
+        "dynamicLogicVisible": null,
+        "style": "warning",
+        "dynamicLogicStyled": null,
+        "sticked": false,
+        "index": 0
+    },
+    "messages": {
+        "index": 1
+    },
+    "stream": {
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "sticked": false,
+        "index": 2
+    }
+}

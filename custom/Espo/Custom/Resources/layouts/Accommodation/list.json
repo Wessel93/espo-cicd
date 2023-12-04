@@ -1,0 +1,27 @@
+[
+    {
+        "name": "acID",
+        "link": true,
+        "align": "left",
+        "label": "Accommodation ID"
+    },
+    {
+        "name": "registrationName"
+    },
+    {
+        "name": "createdAt",
+        "label": "Created At"
+    },
+    {
+        "name": "typeOwner",
+        "label": "Type of property owner"
+    },
+    {
+        "name": "registrationStatus",
+        "label": "Registration status"
+    },
+    {
+        "name": "verificationStatus",
+        "label": "Verification status"
+    }
+]

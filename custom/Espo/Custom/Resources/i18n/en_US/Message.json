@@ -1,0 +1,65 @@
+{
+    "fields": {
+        "errorcode": "Error code",
+        "from": "From",
+        "language": "Language",
+        "placeholder1": "{{1}}",
+        "placeholder10": "{{10}}",
+        "placeholder11": "{{11}}",
+        "placeholder12": "{{12}}",
+        "placeholder2": "{{2}}",
+        "placeholder3": "{{3}}",
+        "placeholder4": "{{4}}",
+        "placeholder5": "{{5}}",
+        "placeholder6": "{{6}}",
+        "placeholder7": "{{7}}",
+        "placeholder8": "{{8}}",
+        "placeholder9": "{{9}}",
+        "sendBody": "Send Body",
+        "sent": "Sent",
+        "sid": "Message ID (SID)",
+        "status": "Status",
+        "to": "To (phone number, including + and country code)",
+        "whatsapp": "WhatsApp",
+        "accommodation": "Accommodation",
+        "messageTemplate": "Message Template",
+        "affectedHousehold": "Affected Household"
+    },
+    "links": {
+        "accommodation": "Accommodation",
+        "messageTemplate": "Message Template",
+        "affectedHousehold": "Affected Household"
+    },
+    "labels": {
+        "Create Message": "Create Message"
+    },
+    "options": {
+        "from": {
+            "whatsapp:+41225391730": "WhatsApp (RR)",
+            "whatsapp:41798077409": "WhatsApp (test)",
+            "REDCROSS": "SMS (REDCROSS)",
+            "+41798077409": "SMS (phone number)"
+        },
+        "language": {
+            "uk": "Ukrainian",
+            "ru": "Russian",
+            "en": "English",
+            "hu": "Hungarian",
+            "sk": "Slovak",
+            "ro": "Romanian",
+            "pl": "Polish",
+            "bu": "Bulgarian",
+            "": ""
+        },
+        "status": {
+            "new": "New",
+            "tobe": "To be send",
+            "sent": "Sent",
+            "read": "Read",
+            "undelivered": "Undelivered",
+            "failed": "Failed",
+            "delivered": "Delivered",
+            "queued": "Queued"
+        }
+    }
+}

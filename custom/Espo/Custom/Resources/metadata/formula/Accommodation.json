@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "// Give correct name to accommodation registration (Accommodation + ID)//\nname = string\\concatenate(\"Accommodation - \", acID);\n\n\n// Give correct name to affected household registration (Household + ID//\nregistrationName = string\\concatenate(firstName,' ', lastName);\n\n\n// Calculate total number of household members // \ntotalHHMembers = (babies + infants + children + adolescents + adults + elderly);\n\n//Calculate age on the basis of date of birth \nage = datetime\\diff(datetime\\today(), birthdate, 'years');\n\nif (verificationStatus == \"approved\"){\n    registrationStatus = \"readyMatching\";\n};"
+}

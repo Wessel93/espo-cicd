@@ -1,0 +1,16 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "transferValue"
+    },
+    {
+        "name": "transferDate"
+    },
+    {
+        "name": "status"
+    }
+]

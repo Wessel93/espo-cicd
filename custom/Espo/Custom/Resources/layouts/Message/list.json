@@ -1,0 +1,17 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "status"
+    },
+    {
+        "name": "sent"
+    },
+    {
+        "name": "teams",
+        "notSortable": true
+    }
+]

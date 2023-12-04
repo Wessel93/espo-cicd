@@ -1,0 +1,37 @@
+{
+    "fields": {
+        "accommodation": "Accommodation",
+        "accommodations": "Accommodations",
+        "firstName": "First name",
+        "lastName": "Last name",
+        "phoneNumber": "Phone number",
+        "gender": "Gender",
+        "email": "Email address",
+        "preferredLanguage": "Preferred language",
+        "affectedHousehold": "Affected Household",
+        "affectedHousehold1": "Affected Household"
+    },
+    "links": {
+        "accommodation": "Accommodation",
+        "accommodations": "Accommodations",
+        "affectedHousehold": "Affected Household",
+        "affectedHousehold1": "Affected Household"
+    },
+    "labels": {
+        "Create ContactDev": "Create Contact"
+    },
+    "options": {
+        "gender": {
+            "female": "Female",
+            "male": "Male",
+            "ratherNotSay": "I'd rather not say",
+            "other": "Other",
+            "": ""
+        },
+        "preferredLanguage": {
+            "option1": "option 1",
+            "option2": "option 2",
+            "option 3": "option 3"
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "iconClass": "fas fa-check-double",
+    "relationshipPanels": {
+        "affectedHousehold": {
+            "layout": null
+        },
+        "accommodation": {
+            "layout": null
+        },
+        "bank": {
+            "layout": null
+        },
+        "transfers": {
+            "layout": null
+        },
+        "cashDistribution": {
+            "layout": null
+        },
+        "monitoring": {
+            "layout": null
+        }
+    },
+    "dynamicLogic": {
+        "options": {
+            "personPay": [
+                {
+                    "optionList": [
+                        "",
+                        "company",
+                        "propertyOwner",
+                        "affectedHH"
+                    ],
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "selectedAcc",
+                            "value": "rental"
+                        }
+                    ]
+                },
+                {
+                    "optionList": [
+                        "",
+                        "hostfam",
+                        "affectedHH"
+                    ],
+                    "conditionGroup": [
+                        {
+                            "type": "equals",
+                            "attribute": "selectedAcc",
+                            "value": "hostFam"
+                        }
+                    ]
+                }
+            ]
+        },
+        "fields": {
+            "ibanVerify": {
+                "visible": {
+                    "conditionGroup": [
+                        {
+                            "type": "isNotEmpty",
+                            "attribute": "iban"
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "kanbanViewMode": false,
+    "color": null
+}

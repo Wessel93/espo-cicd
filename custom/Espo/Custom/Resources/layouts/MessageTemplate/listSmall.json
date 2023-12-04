@@ -1,0 +1,10 @@
+[
+    {
+        "name": "name",
+        "link": true,
+        "label": "Name"
+    },
+    {
+        "name": "bodyEN"
+    }
+]

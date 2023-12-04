@@ -1,0 +1,3 @@
+{
+    "beforeSaveCustomScript": "//name = string\\concatenate(messageTemplateName, ' - ', datetime\\now());\nname = string\\concatenate(messageTemplateName, ' - ', createdAt);\n\nifThenElse(affectedHouseholdId != null,\n    to = record\\attribute('AffectedHousehold', affectedHouseholdId, 'phoneNumber');\n    entity\\addLinkMultipleId('teams', affectedHousehold.teamsIds);\n    , \n    to = record\\attribute('Accommodation', accommodationId, 'phoneNumber');\n    entity\\addLinkMultipleId('teams', accommodation.teamsIds);\n);\n\n"
+}

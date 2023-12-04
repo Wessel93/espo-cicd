@@ -1,0 +1,38 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "transferDate"
+                },
+                {
+                    "name": "transferType"
+                }
+            ],
+            [
+                {
+                    "name": "transferValue"
+                },
+                {
+                    "name": "deliveryMechanism"
+                }
+            ],
+            [
+                {
+                    "name": "frequency"
+                },
+                {
+                    "name": "numberOfTransfers"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

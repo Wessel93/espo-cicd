@@ -1,0 +1,30 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "transferDate"
+                },
+                {
+                    "name": "transferType"
+                }
+            ],
+            [
+                {
+                    "name": "transferValue"
+                },
+                {
+                    "name": "deliveryMechanism"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

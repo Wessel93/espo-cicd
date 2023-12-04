@@ -1,0 +1,21 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "date"
+                },
+                {
+                    "name": "meetingType"
+                }
+            ],
+            [
+                {
+                    "name": "description"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Overview"
+    }
+]

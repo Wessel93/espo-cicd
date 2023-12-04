@@ -1,0 +1,5 @@
+{
+    "primaryFilterClassNameMap": {
+        "reportFilter653fd7a94eabdb0ab": "Espo\\Modules\\Advanced\\Classes\\Select\\Common\\PrimaryFilters\\ReportFilter"
+    }
+}

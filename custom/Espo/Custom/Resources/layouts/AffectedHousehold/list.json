@@ -1,0 +1,27 @@
+[
+    {
+        "name": "hhID",
+        "link": true,
+        "align": "left",
+        "label": "Household ID"
+    },
+    {
+        "name": "registrationName"
+    },
+    {
+        "name": "createdAt",
+        "label": "Created At"
+    },
+    {
+        "name": "registrationStatus",
+        "label": "Registration status"
+    },
+    {
+        "name": "eligibilityStatus",
+        "label": "Eligibility status"
+    },
+    {
+        "name": "duplicateCheck",
+        "label": "Duplicate status"
+    }
+]

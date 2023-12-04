@@ -1,0 +1,376 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "beneficiaryName"
+                },
+                {
+                    "name": "nameRcstaff"
+                }
+            ],
+            [
+                {
+                    "name": "accommodationID"
+                },
+                {
+                    "name": "accommodation"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "General information",
+        "hidden": false,
+        "customLabel": "Overview"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "buildingStructure"
+                },
+                {
+                    "name": "housingBasement"
+                }
+            ],
+            [
+                {
+                    "name": "utilitiesElectricity"
+                },
+                {
+                    "name": "utilitiesWater"
+                }
+            ],
+            [
+                {
+                    "name": "utilitiesStorage"
+                },
+                {
+                    "name": "utilitiesSeptic"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Safety of structure",
+        "hidden": false,
+        "customLabel": "Safety of structure"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "housingunitType"
+                },
+                {
+                    "name": "addressVerification"
+                }
+            ],
+            [
+                {
+                    "name": "numberBedrooms"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Housing, property and location",
+        "hidden": false,
+        "customLabel": "Housing type"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "proofOwnership"
+                },
+                {
+                    "name": "photoProperty"
+                }
+            ],
+            [
+                {
+                    "name": "propertyOwnershipdetails"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "warning",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Property ownership"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "housingEasyaccess"
+                },
+                {
+                    "name": "housingNeigbourhood"
+                }
+            ],
+            [
+                {
+                    "name": "locationDetails"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Location"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "safetyFence"
+                },
+                {
+                    "name": "safetyLockexternal"
+                }
+            ],
+            [
+                {
+                    "name": "safetyLockinternal"
+                },
+                {
+                    "name": "safetyLockwindows"
+                }
+            ],
+            [
+                {
+                    "name": "safetyBalconies"
+                },
+                {
+                    "name": "safetyGasconnection"
+                }
+            ],
+            [
+                {
+                    "name": "safetyElectricitycookingheating"
+                },
+                {
+                    "name": "safetyDetails"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Safety and habitability",
+        "hidden": false,
+        "customLabel": "Safety"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "habitabilityPaint"
+                },
+                {
+                    "name": "habitabilityDry"
+                }
+            ],
+            [
+                {
+                    "name": "habitabilityVentilated"
+                },
+                {
+                    "name": "habitabilitySealed"
+                }
+            ],
+            [
+                {
+                    "name": "habitabilityDetails"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "warning",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Habitability, rain and rain proofing"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "utilitiesHeating"
+                },
+                {
+                    "name": "utilitiesLightning"
+                }
+            ],
+            [
+                {
+                    "name": "utilitiesBathroom"
+                },
+                {
+                    "name": "utilitiesHeater"
+                }
+            ],
+            [
+                {
+                    "name": "utilitiesDetails"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Utlilities and space",
+        "hidden": false,
+        "customLabel": "Utilities and systems - Electricity, heating, water and sanitation"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "kitchenCook"
+                },
+                {
+                    "name": "kitchenDining"
+                }
+            ],
+            [
+                {
+                    "name": "kitchenCookware"
+                },
+                {
+                    "name": "kitchenDetails"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "warning",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Kitchen \/ Living room"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "bedroomBed"
+                },
+                {
+                    "name": "bedroomSharing"
+                }
+            ],
+            [
+                {
+                    "name": "bedroomWardrobe"
+                },
+                {
+                    "name": "bedroomMattress"
+                }
+            ],
+            [
+                {
+                    "name": "bedroomPillow"
+                },
+                {
+                    "name": "bedroomDetails"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Bedroom(s)"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "accessibilityDisabilityproperty"
+                },
+                {
+                    "name": "accessibilityDisabilityhouse"
+                }
+            ],
+            [
+                {
+                    "name": "accessibilityElevator"
+                },
+                {
+                    "name": "accessibilitySpecialsanitary"
+                }
+            ],
+            [
+                {
+                    "name": "accessibilityDetails"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Accessibility and photos",
+        "hidden": false,
+        "customLabel": "Accessibility"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "photoKitchen"
+                },
+                {
+                    "name": "photoBedroom1"
+                }
+            ],
+            [
+                {
+                    "name": "photoBedroom2"
+                },
+                {
+                    "name": "photoHousing1"
+                }
+            ],
+            [
+                {
+                    "name": "photoHousing2"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "warning",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Photos"
+    }
+]

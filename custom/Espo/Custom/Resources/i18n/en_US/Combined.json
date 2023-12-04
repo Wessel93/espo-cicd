@@ -1,0 +1,60 @@
+{
+    "fields": {
+        "affectedHousehold": "Affected Household",
+        "accommodation": "Accommodation",
+        "contractStart": "Start date of contract",
+        "contractEnd": "End date of contract",
+        "selectedAcc": "Selected accommodation type",
+        "statusMatch": "Status of match",
+        "paymentsQuestion": "Is payment information required?",
+        "personPay": "Who should be paid?",
+        "contractRental": "Copy of rental contract",
+        "banks": "Banks",
+        "contractHostGuest": "Copy of agreement between host and affected household",
+        "bank": "Bank",
+        "swiftCode": "Bank Swift Code",
+        "iban": "IBAN",
+        "ibanVerify": "Note on verification of IBAN number",
+        "validIBAN": "ValidIBAN",
+        "nrPayments": "Number of payments",
+        "transfers": "Transfers",
+        "cashDistribution": "Create new cash distribution",
+        "matchApproved": "Match approved by shelter manager",
+        "transferApproved": "Transfer approved by shelter manager",
+        "monitoring": "Monitoring",
+        "addressMatch": "Address of accommodation"
+    },
+    "links": {
+        "affectedHousehold": "Affected Household",
+        "accommodation": "Accommodation",
+        "banks": "Banks",
+        "bank": "Bank",
+        "transfers": "Transfers",
+        "cashDistribution": "Cash Distribution",
+        "monitoring": "Monitoring"
+    },
+    "labels": {
+        "Create Combined": "Create Match"
+    },
+    "options": {
+        "selectedAcc": {
+            "hostFam": "Host family accommodation",
+            "rental": "Rental accommodation",
+            "": ""
+        },
+        "statusMatch": {
+            "new": "New",
+            "pending": "Pending",
+            "confirmed": "Confirmed",
+            "completed": "Completed",
+            "": ""
+        },
+        "personPay": {
+            "company": "Company",
+            "propertyOwner": "Property owner",
+            "hostfam": "Host family",
+            "affectedHH": "Affected household",
+            "": ""
+        }
+    }
+}

@@ -1,0 +1,725 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": false,
+            "pattern": "$noBadCharacters",
+            "options": []
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true,
+            "view": "views/fields/user"
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "acID": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 1,
+            "padLength": 5,
+            "prefix": "AC",
+            "isCustom": true
+        },
+        "typeOwner": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "hostFam",
+                "landLord",
+                "company",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "hostFam": null,
+                "landLord": null,
+                "company": null,
+                "": null
+            }
+        },
+        "gender": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "male",
+                "female",
+                "other",
+                "rathernotsay",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "male": null,
+                "female": null,
+                "other": null,
+                "rathernotsay": null,
+                "": null
+            }
+        },
+        "birthdate": {
+            "notNull": false,
+            "type": "date",
+            "audited": true,
+            "isCustom": true
+        },
+        "age": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true,
+            "readOnly": true
+        },
+        "emailAddress": {
+            "notStorable": true,
+            "type": "email",
+            "audited": true,
+            "isCustom": true
+        },
+        "preferredLanguagecommunication": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "ukrainian",
+                "russian",
+                "english",
+                "slovak",
+                "slovenian",
+                "hungarian",
+                "polish",
+                "romanian",
+                "bulgarian",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "ukrainian": null,
+                "russian": null,
+                "english": null,
+                "slovak": null,
+                "slovenian": null,
+                "hungarian": null,
+                "polish": null,
+                "romanian": null,
+                "bulgarian": null,
+                "": null
+            }
+        },
+        "idType": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "passport",
+                "idcard",
+                "idother",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "passport": null,
+                "idcard": null,
+                "idother": null,
+                "": null
+            },
+            "default": null
+        },
+        "idNumber": {
+            "type": "varchar",
+            "audited": true,
+            "isCustom": true
+        },
+        "expirationId": {
+            "notNull": false,
+            "type": "date",
+            "audited": true,
+            "isCustom": true
+        },
+        "accType": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "apartment",
+                "house",
+                "sharedAcc",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "apartment": null,
+                "house": null,
+                "sharedAcc": null,
+                "": null
+            }
+        },
+        "startDate": {
+            "notNull": false,
+            "type": "date",
+            "audited": true,
+            "isCustom": true
+        },
+        "endDate": {
+            "notNull": false,
+            "type": "date",
+            "audited": true,
+            "isCustom": true
+        },
+        "address": {
+            "type": "text",
+            "audited": true,
+            "isCustom": true
+        },
+        "nrRooms": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "nrBeds": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "sizeRoom": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "nrPeople": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "hostChildren": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "havePets": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "acceptPets": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "youSmoke": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "acceptSmoke": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "seperateBathroom": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "seperateKitchen": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "accessibility": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "elevator": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "employmentStatus": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "fullTime",
+                "partTime",
+                "retired",
+                "noJob",
+                "other",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "fullTime": null,
+                "partTime": null,
+                "retired": null,
+                "noJob": null,
+                "other": null,
+                "": null
+            }
+        },
+        "distanceMarket": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "distanceSchool": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "nearAccommodation": {
+            "type": "enum",
+            "audited": true,
+            "options": [
+                "yes",
+                "no",
+                ""
+            ],
+            "isCustom": true,
+            "style": {
+                "yes": null,
+                "no": null,
+                "": null
+            }
+        },
+        "babies": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "infants": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "children": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "adolescents": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "adults": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "elderly": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "totalHHMembers": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true,
+            "readOnly": true
+        },
+        "commentBox": {
+            "type": "text",
+            "audited": true,
+            "isCustom": true
+        },
+        "combineds": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": false,
+            "isCustom": true
+        },
+        "contactDev": {
+            "type": "link",
+            "readOnly": true
+        },
+        "registrationName": {
+            "type": "varchar",
+            "maxLength": 150,
+            "readOnly": true,
+            "options": [],
+            "isCustom": true
+        },
+        "registrationStatus": {
+            "type": "enum",
+            "options": [
+                "new",
+                "pending",
+                "readyMatching",
+                "matchConfirmed"
+            ],
+            "style": {
+                "new": "primary",
+                "pending": "warning",
+                "readyMatching": "info",
+                "matchConfirmed": "success"
+            },
+            "default": "new",
+            "isCustom": true,
+            "displayAsLabel": true
+        },
+        "messages": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": true,
+            "isCustom": true
+        },
+        "districtAccommodation": {
+            "type": "enum",
+            "options": [
+                "district1",
+                "district2",
+                "district3",
+                "district4",
+                "district5",
+                "district6",
+                ""
+            ],
+            "style": {
+                "district1": null,
+                "district2": null,
+                "district3": null,
+                "district4": null,
+                "district5": null,
+                "district6": null,
+                "": null
+            },
+            "isCustom": true
+        },
+        "phoneNumber": {
+            "type": "varchar",
+            "maxLength": 150,
+            "options": [],
+            "isCustom": true,
+            "pattern": "^(00|\\+)(9[976]\\d|8[987530]\\d|6[987]\\d|5[90]\\d|42\\d|3[875]\\d|2[98654321]\\d|9[8543210]|8[6421]|6[6543210]|5[87654321]|4[987654310]|3[9643210]|2[70]|7|1)\\d{1,14}$"
+        },
+        "affectedHouseholds": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "layoutListDisabled": false,
+            "noLoad": false,
+            "importDisabled": false,
+            "exportDisabled": false,
+            "customizationDisabled": false,
+            "isCustom": true
+        },
+        "commentBoxEnglish": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "audited": true,
+            "isCustom": true
+        },
+        "consentToShare": {
+            "notNull": true,
+            "type": "bool",
+            "audited": true,
+            "isCustom": true
+        },
+        "verificationStatus": {
+            "type": "enum",
+            "options": [
+                "Adequacy check is scheduled",
+                "pending",
+                "approved",
+                "rejected",
+                ""
+            ],
+            "style": {
+                "Adequacy check is scheduled": "info",
+                "pending": "warning",
+                "approved": "success",
+                "rejected": "danger",
+                "": null
+            },
+            "isCustom": true,
+            "displayAsLabel": true
+        },
+        "otherId": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "isCustom": true
+        },
+        "lastName": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "isCustom": true
+        },
+        "firstName": {
+            "type": "text",
+            "rowsMin": 2,
+            "cutHeight": 200,
+            "isCustom": true
+        },
+        "adequacyCriteria": {
+            "type": "link"
+        },
+        "preferredLanguage": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "options": [
+                "ukrainian",
+                "russian",
+                "english",
+                "slovak",
+                "slovenian",
+                "hungarian",
+                "polish",
+                "romanian",
+                "bulgarian"
+            ],
+            "style": {
+                "ukrainian": null,
+                "russian": null,
+                "english": null,
+                "slovak": null,
+                "slovenian": null,
+                "hungarian": null,
+                "polish": null,
+                "romanian": null,
+                "bulgarian": null
+            },
+            "audited": true,
+            "isCustom": true
+        },
+        "nrBeds2": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "nrBeds3": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "sizeRoom2": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        },
+        "sizeRoom3": {
+            "type": "int",
+            "audited": true,
+            "isCustom": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "entityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "combineds": {
+            "type": "hasMany",
+            "foreign": "accommodation",
+            "entity": "Combined",
+            "audited": false,
+            "isCustom": true
+        },
+        "contactDev": {
+            "type": "belongsTo",
+            "foreign": "accommodations",
+            "entity": "ContactDev",
+            "audited": false,
+            "isCustom": true
+        },
+        "messages": {
+            "type": "hasMany",
+            "foreign": "accommodation",
+            "entity": "Message",
+            "audited": false,
+            "isCustom": true
+        },
+        "affectedHouseholds": {
+            "type": "hasMany",
+            "relationName": "affectedHouseholdAccommodation",
+            "foreign": "accommodations",
+            "entity": "AffectedHousehold",
+            "audited": true,
+            "isCustom": true
+        },
+        "adequacyCriteria": {
+            "type": "belongsTo",
+            "foreign": "accommodation",
+            "entity": "AdequacyCriteria",
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "filters": {
+            "reportFilter65410babcb92b27a6": {
+                "isReportFilter": true,
+                "id": "65410babcb92b27a6"
+            },
+            "reportFilter65410bbbd605949b7": {
+                "isReportFilter": true,
+                "id": "65410bbbd605949b7"
+            }
+        }
+    },
+    "indexes": {
+        "name": {
+            "columns": [
+                "name",
+                "deleted"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        },
+        "createdAt": {
+            "columns": [
+                "createdAt"
+            ]
+        },
+        "createdAtId": {
+            "unique": true,
+            "columns": [
+                "createdAt",
+                "id"
+            ]
+        }
+    }
+}

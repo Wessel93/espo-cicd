@@ -1,0 +1,28 @@
+[
+    {
+        "name": "acID",
+        "link": true,
+        "align": "left",
+        "label": "Accommodation ID"
+    },
+    {
+        "name": "registrationName",
+        "label": "Name (registrationName)"
+    },
+    {
+        "name": "typeOwner",
+        "label": "Type of property owner"
+    },
+    {
+        "name": "preferredLanguage",
+        "label": "Languages spoken"
+    },
+    {
+        "name": "verificationStatus",
+        "label": "Verification status"
+    },
+    {
+        "name": "nrRooms",
+        "label": "How many bedrooms do you offer?"
+    }
+]

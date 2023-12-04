@@ -1,0 +1,342 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "consentToShare"
+                }
+            ],
+            [
+                {
+                    "name": "teams"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "danger",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Consent"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "firstName"
+                },
+                {
+                    "name": "lastName"
+                }
+            ],
+            [
+                {
+                    "name": "gender"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "birthdate"
+                },
+                {
+                    "name": "age"
+                }
+            ],
+            [
+                {
+                    "name": "phoneNumber"
+                },
+                {
+                    "name": "emailAddress"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "default",
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Contact Information - Head of Household"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "idType"
+                },
+                {
+                    "name": "otherId"
+                }
+            ],
+            [
+                {
+                    "name": "idNumber"
+                },
+                {
+                    "name": "expirationId"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Identification"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "preferredLanguage"
+                },
+                {
+                    "name": "preferredLanguageOther"
+                }
+            ],
+            [
+                {
+                    "name": "preferredLanguagecommunication"
+                },
+                {
+                    "name": "preferredLanguageOtherRC"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Language"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "accommodationType"
+                },
+                {
+                    "name": "accommodationDeadline"
+                }
+            ],
+            [
+                {
+                    "name": "accommodationAddress"
+                },
+                {
+                    "name": "region"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "tabLabel": null,
+        "hidden": false,
+        "customLabel": "Current accommodation"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "commentBox"
+                },
+                {
+                    "name": "commentBoxEnglish"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "warning",
+        "dynamicLogicStyled": null,
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Comments"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "singleHeaded"
+                },
+                {
+                    "name": "hhTotal"
+                }
+            ],
+            [
+                {
+                    "name": "babies"
+                },
+                {
+                    "name": "infants"
+                }
+            ],
+            [
+                {
+                    "name": "children"
+                },
+                {
+                    "name": "adolescents"
+                }
+            ],
+            [
+                {
+                    "name": "adults"
+                },
+                {
+                    "name": "elderly"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Household composition",
+        "hidden": false,
+        "customLabel": "Household composition"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "pets"
+                },
+                {
+                    "name": "smoke"
+                }
+            ],
+            [
+                {
+                    "name": "accesibilityAdaptations"
+                },
+                {
+                    "name": "car"
+                }
+            ],
+            [
+                {
+                    "name": "kindergarden"
+                },
+                {
+                    "name": "primarySchool"
+                }
+            ],
+            [
+                {
+                    "name": "highSchool"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "membersSpecificNeeds"
+                },
+                {
+                    "name": "specificNeeds"
+                }
+            ],
+            [
+                {
+                    "name": "preferredDistrict"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": {
+            "conditionGroup": [
+                {
+                    "type": "isTrue",
+                    "attribute": "consentToShare"
+                }
+            ]
+        },
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Matching Criteria",
+        "hidden": false,
+        "customLabel": "Matching Criteria"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "registrationStatus"
+                },
+                {
+                    "name": "duplicateCheck"
+                }
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "success",
+        "dynamicLogicStyled": null,
+        "tabBreak": true,
+        "tabLabel": "Status",
+        "hidden": false,
+        "customLabel": "Registration status"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "eligibilityStatus"
+                },
+                false
+            ]
+        ],
+        "dynamicLogicVisible": null,
+        "style": "default",
+        "tabBreak": false,
+        "hidden": false,
+        "customLabel": "Eligibility status"
+    }
+]
